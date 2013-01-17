@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <TextView android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"
+    android:id="@+id/textView1"
+     android:textAppearance="?android:attr/textAppearanceMedium" 
+     android:text="Welcome to Hồ Chí Minh Tour Guide" android:layout_gravity="center">
+     </TextView>
+     
+    <LinearLayout android:layout_height="wrap_content" 
+    			  android:layout_width="match_parent" 
+    			  android:id="@+id/linearLayout1"
+    			  android:orientation="vertical">
+        <LinearLayout android:layout_height="wrap_content" 
+        		  android:layout_width="match_parent" 
+        		  android:id="@+id/linearLayout2">
+        		  
+            <EditText android:id="@+id/editText1"
+					  android:layout_width="178dp" 
+					  android:layout_weight="1" 
+					  android:layout_height="match_parent">
+                <requestFocus></requestFocus>
+            </EditText>
+            
+            <ImageButton android:id="@+id/searchButton" 
+            			 android:src="@android:drawable/ic_search_category_default" 
+            			 android:layout_width="wrap_content" 
+            			 android:layout_height="wrap_content"></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/space" 
+    		  android:textAppearance="?android:attr/textAppearanceLarge" 
+    		  android:text=" "
+    		  android:layout_height="wrap_content" 
+    		  android:layout_weight="0.11" 
+    		  android:layout_width="wrap_content"></TextView>
+    		  
+    <Button android:id="@+id/touristButton"
+    		android:text="Tourist Information"
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent"></Button>
+    
+    <Button android:text="Communication Sentences" 
+    		android:id="@+id/communicateButton"
+     		android:layout_width="fill_parent"
+     		android:layout_height="wrap_content">
+     </Button>
+     
+     
+     
+</LinearLayout>
