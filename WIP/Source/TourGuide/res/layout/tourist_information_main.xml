@@ -2,16 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="1" android:orientation="vertical">
-    
-    <TextView 
+    android:weightSum="1" 
+    android:orientation="vertical">
+    <LinearLayout 
     	android:layout_height="wrap_content" 
-    	android:layout_width="fill_parent"
-    	android:id="@+id/textView1"
-     	android:textAppearance="?android:attr/textAppearanceMedium" 
-    	android:text="Welcome to Hồ Chí Minh Tour Guide" 
-    	android:layout_gravity="center_vertical">
-     </TextView>
+    	android:id="@+id/linearLayout11" 
+    	android:orientation="vertical" 
+    	android:layout_width="match_parent">
+    </LinearLayout>
      
     <LinearLayout 
     	android:layout_height="wrap_content" 
@@ -25,14 +23,11 @@
         	android:id="@+id/linearLayout2"
         	android:baselineAligned="false" 
         	android:weightSum="1">
-        		  
             <EditText 
-            	android:id="@+id/editText1"
-				android:layout_width="178dp" 
-				android:layout_height="wrap_content" 
-				android:layout_weight="1.03">
-                <requestFocus>
-                </requestFocus>
+            	android:layout_height="wrap_content" 
+            	android:layout_weight="1.03" 
+            	android:id="@+id/editText1" 
+            	android:layout_width="178dp">
             </EditText>
             
             <ImageButton 
@@ -46,41 +41,26 @@
     
     <LinearLayout 
     	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout10" 
+    	android:orientation="vertical" 
+    	android:layout_width="match_parent">
+    	
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Tourist Information" 
+        	android:textAppearance="?android:attr/textAppearanceLarge" 
+        	android:id="@+id/textView2" 
+        	android:layout_gravity="center" 
+        	android:layout_width="wrap_content">
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
     	android:id="@+id/linearLayout3" 
     	android:layout_width="match_parent" 
     	android:orientation="vertical" 
-    	android:weightSum="1" 
-    	android:layout_weight="1.01">
-    	
-        <LinearLayout 
-        	android:layout_height="wrap_content" 
-        	android:layout_weight="0.35" 
-        	android:id="@+id/linearLayout5" 
-        	android:layout_width="match_parent">
-        	
-            <Button 
-            	android:text="Tourist Information" 
-            	android:layout_height="wrap_content" 
-            	android:id="@+id/touristButton" 
-            	android:layout_width="match_parent" 
-            	android:layout_gravity="bottom">
-            </Button>
-        </LinearLayout>
-        
-        <LinearLayout 
-        	android:layout_height="wrap_content" 
-        	android:id="@+id/linearLayout4" 
-        	android:layout_width="match_parent" 
-        	android:layout_weight="0.35">
-        	
-            <Button 
-            	android:text="Communication Sentences" 
-            	android:layout_height="wrap_content" 
-            	android:id="@+id/communicateButton" 
-            	android:layout_width="match_parent" 
-            	android:layout_gravity="top">
-            </Button>
-        </LinearLayout>
+    	android:weightSum="1" android:layout_weight="1.00">
     </LinearLayout>
     
     <LinearLayout 
@@ -108,7 +88,7 @@
             	android:layout_width="wrap_content">
             	
                 <ImageButton 
-                	android:src="@android:drawable/ic_menu_directions" 
+                	android:src="@android:drawable/ic_menu_mapmode" 
                 	android:id="@+id/mapButton" 
                 	android:layout_width="wrap_content" 
                 	android:layout_gravity="center" 
