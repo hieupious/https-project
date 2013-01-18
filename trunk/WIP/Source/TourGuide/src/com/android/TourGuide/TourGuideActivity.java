@@ -7,11 +7,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class TourGuideActivity extends Activity {
     /** Called when the activity is first created. */
 	
-	Button btSearch;
+	ImageButton btSearch;
 	EditText txtSearch;
 	Button btTourInfo;
 	Button btComSentences;
@@ -22,9 +23,9 @@ public class TourGuideActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainportrait);
         
-        txtSearch = (EditText)findViewById(R.id.txtSearch1);
+        txtSearch = (EditText)findViewById(R.id.txtSearch1);        
+        btSearch = (ImageButton)findViewById(R.id.searchButton);
         btTourInfo = (Button)findViewById(R.id.touristButton);
-        btSearch = (Button)findViewById(R.id.searchButton);
         btComSentences = (Button)findViewById(R.id.communicateButton);
         
         btTourInfo.setOnClickListener(new OnClickListener() {
