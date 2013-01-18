@@ -35,9 +35,9 @@ public final class R {
         public static final int txtSearch1=0x7f060012;
     }
     public static final class layout {
-        public static final int main_landscape=0x7f030000;
-        public static final int main_portrait=0x7f030001;
-        public static final int tourist_information_main=0x7f030002;
+        public static final int mainlandscape=0x7f030000;
+        public static final int mainportrait=0x7f030001;
+        public static final int touristinformationmain=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
