@@ -1,5 +1,7 @@
 package com.android.TourGuide;
 
+import com.google.android.MapMenu;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ public class TourGuideActivity extends Activity {
 	EditText txtSearch;
 	Button btTourInfo;
 	Button btComSentences;
+	ImageButton btMap;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) 
@@ -25,8 +28,10 @@ public class TourGuideActivity extends Activity {
         
         txtSearch = (EditText)findViewById(R.id.txtSearch1);        
         btSearch = (ImageButton)findViewById(R.id.searchButton);
+        btMap = (ImageButton)findViewById(R.id.mapButton);
         btTourInfo = (Button)findViewById(R.id.touristButton);
         btComSentences = (Button)findViewById(R.id.communicateButton);
+        
         
         btTourInfo.setOnClickListener(new OnClickListener() {
 			
@@ -34,6 +39,25 @@ public class TourGuideActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent intend = new Intent(getApplicationContext(),TouristInformationMenu.class);
 				startActivity(intend);
+			}
+		});
+        
+        btComSentences.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getApplicationContext(),CommunicateSentenseMenu.class);
+				startActivity(intent);				
+			}
+		});
+        
+        btMap.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				Intent intent = new Intent(getApplicationContext(),MapMenu.class);
+				startActivity(intent);				
 			}
 		});
         
