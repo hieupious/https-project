@@ -62,11 +62,6 @@
     	android:orientation="vertical" 
     	android:weightSum="1" android:layout_weight="1.00">
     	
-    	<com.google.android.maps.MapView
-                 android:apiKey="0JWMQtrJQBLGgrJw4F1srHS1VMrxoKD7StUfWRg"
-                 android:layout_height="fill_parent"
-                 android:layout_width="fill_parent"
-                 />
                  
     </LinearLayout>
     
