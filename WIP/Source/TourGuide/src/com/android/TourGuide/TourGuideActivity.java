@@ -1,7 +1,5 @@
 package com.android.TourGuide;
 
-import com.google.android.MapMenu;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
