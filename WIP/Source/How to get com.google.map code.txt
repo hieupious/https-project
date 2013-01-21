@@ -1,0 +1,36 @@
+CÁC BUOC LAY MÃ CODE GOOGLE MAP
+
+Buoc 1)
+Xác dinh c:\users\"USER"\.android\debug.keystore
+* Thay "USER" bang tên máy
+
+Buoc 2)
+Xác dinh C:\Program Files\Java\"jdk1.7.0"\bin
+* Thay doi "jdk1.7.0" bang JDK dang su dung
+
+Tìm và chay file keytool.exe
+
+Buoc 3)
+Chay cmd
+Gõ cd C:\Program Files\Java\"jdk1.7.0"\bin
+Gõ keytool.exe -v -list -alias androiddebugkey -keystore "C:\users\"USER"\.android\debug.keystore" -storepass android -keypass android
+Tìm và copy mã MD5 code có dang:  A1:G5:75:**:**:**:**:**:**:**:**:**:**:**
+
+Buoc 4)
+Vào trang https://developers.google.com/maps/documentation/android/v1/maps-api-signup
+
+Buoc 5)
+Chon "I have read and agree with the terms and conditions"
+Paste MD5 code vào "My certificate's MD5 fingerprint: "
+Click chon nút "Generate API Key"
+
+Buoc 6) 
+Lay mã s? goodle map có dang: "0JWMQtr*************************"
+hoac lay code google map cho có dang:
+" 
+<com.google.android.maps.MapView
+          android:apiKey="0JWMQtr*************************"
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+/>
+"
