@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" 
+    android:orientation="vertical">
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout11" 
+    	android:orientation="vertical" 
+    	android:layout_width="match_parent">
+    	
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text="Welcome to Hồ Chí Minh Tour Guide" 
+        	android:textAppearance="?android:attr/textAppearanceMedium" 
+        	android:id="@+id/textView1" 
+        	android:layout_gravity="center" 
+        	android:layout_width="wrap_content">
+        </TextView>
+    </LinearLayout>
+     
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="match_parent" 
+    	android:id="@+id/linearLayout1"
+    	android:orientation="vertical">
+    			  
+        <LinearLayout 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="match_parent" 
+        	android:id="@+id/linearLayout2"
+        	android:baselineAligned="false" 
+        	android:weightSum="1">
+            <EditText 
+            	android:layout_height="wrap_content" 
+            	android:layout_weight="1.03" 
+            	android:layout_width="178dp" android:id="@+id/txtSearch1">
+            </EditText>
+            
+            <ImageButton 
+            	android:id="@+id/searchButton" 
+            	android:src="@android:drawable/ic_search_category_default" 
+            	android:layout_height="match_parent" 
+            	android:layout_width="wrap_content">
+            </ImageButton>
+        </LinearLayout>        
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout10" 
+    	android:orientation="vertical" 
+    	android:layout_width="match_parent">
+    	
+        <TextView 
+        	android:layout_height="wrap_content" 
+        	android:text=" " 
+        	android:textAppearance="?android:attr/textAppearanceLarge" 
+        	android:id="@+id/textView2" 
+        	android:layout_gravity="center" 
+        	android:layout_width="wrap_content">
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout3" 
+    	android:layout_width="match_parent" 
+    	android:orientation="vertical" 
+    	android:weightSum="1" 
+    	android:layout_weight="1.02">
+    	
+        <LinearLayout 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/linearLayout5" 
+        	android:layout_width="match_parent" 
+        	android:layout_weight="0.33">
+        	
+            <Button 
+            	android:text="Tourist Information" 
+            	android:layout_height="wrap_content" 
+            	android:id="@+id/touristButton" 
+            	android:layout_width="match_parent" 
+            	android:layout_gravity="bottom">
+            </Button>
+        </LinearLayout>
+        
+        <LinearLayout 
+        	android:layout_weight="0.35" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/linearLayout4" 
+        	android:layout_width="match_parent">
+        	
+            <Button 
+            	android:layout_height="wrap_content" 
+            	android:text="Communication Sentences" 
+            	android:layout_gravity="top" 
+            	android:id="@+id/communicateButton" 
+            	android:layout_width="match_parent">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout6" 
+    	android:layout_width="match_parent" 
+    	android:weightSum="1" 
+    	android:baselineAligned="false" 
+    	android:orientation="horizontal">
+    	
+        <LinearLayout 
+        	android:layout_height="match_parent" 
+        	android:id="@+id/linearLayout7" 
+        	android:layout_gravity="left" 
+        	android:baselineAligned="false" 
+        	android:orientation="vertical" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearLayout8" android:layout_height="wrap_content" android:layout_width="match_parent"></LinearLayout>
+            <LinearLayout android:id="@+id/linearLayout12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/mapButton" android:src="@android:drawable/ic_menu_mapmode" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_width="wrap_content"></ImageButton>
+            </LinearLayout>
+        	
+            <LinearLayout 
+            	android:id="@+id/linearLayout9" 
+            	android:baselineAligned="false" 
+            	android:layout_height="42dp" 
+            	android:layout_gravity="left" 
+            	android:layout_width="wrap_content">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+   
+</LinearLayout>
